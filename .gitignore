@@ -1,0 +1,61 @@
+# Build output
+build/
+**/build/
+cmake-build-*/
+**/cmake-build-*/
+
+# CMake generated files
+CMakeFiles/
+**/CMakeFiles/
+CMakeCache.txt
+**/CMakeCache.txt
+cmake_install.cmake
+**/cmake_install.cmake
+compile_commands.json
+**/compile_commands.json
+CMakeUserPresets.json
+
+# Firmware and object artifacts
+*.elf
+*.bin
+*.hex
+*.map
+*.o
+*.obj
+*.d
+*.lst
+*.su
+
+# ESP-IDF generated files
+sdkconfig.old
+managed_components/
+dependencies.lock
+flasher_args.json
+flash_*args
+app-flash_args
+bootloader-flash_args
+partition-table-flash_args
+
+# IDE and editor local state
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+
+# OS metadata
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Python generated files
+__pycache__/
+*.py[cod]
+
+# Local/private configuration
+secrets.h
+*.secret.h
+*.local.h
+config.local.h
+wifi_config.h
+mqtt_config.h

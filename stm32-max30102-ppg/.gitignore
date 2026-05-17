@@ -1,0 +1,22 @@
+# Build output
+build/
+**/build/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+
+# Firmware build artifacts
+*.elf
+*.map
+*.bin
+*.hex
+*.o
+*.obj
+*.d
+
+# IDE
+.vscode/
+.idea/

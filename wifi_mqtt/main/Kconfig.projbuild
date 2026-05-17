@@ -1,0 +1,45 @@
+menu "PPG MQTT Gateway Configuration"
+
+    config MQTT_BROKER_URI
+        string "MQTT broker URI"
+        default "mqtt://your-broker.example.com"
+        help
+            MQTT broker URI used by the ESP32 gateway. Do not commit real private broker addresses if they are sensitive.
+
+    config MQTT_CLIENT_ID
+        string "MQTT client ID"
+        default "esp32-ppg-client"
+        help
+            Client ID used when connecting to the MQTT broker.
+
+    config MQTT_USERNAME
+        string "MQTT username"
+        default "your_mqtt_username"
+        help
+            MQTT username. Do not commit real credentials.
+
+    config MQTT_PASSWORD
+        string "MQTT password"
+        default "your_mqtt_password"
+        help
+            MQTT password. Do not commit real credentials.
+
+    config MQTT_PPG_TOPIC
+        string "PPG data topic"
+        default "/ppg/data"
+        help
+            Topic used to publish PPG data JSON.
+
+    config MQTT_STATUS_TOPIC
+        string "ESP32 status topic"
+        default "/ppg/status"
+        help
+            Topic used to publish ESP32 online/offline status.
+
+    config MQTT_COMMAND_TOPIC
+        string "ESP32 command topic"
+        default "/ppg/command"
+        help
+            Optional topic subscribed by the ESP32 gateway.
+
+endmenu
